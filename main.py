@@ -1,48 +1,48 @@
-#Defining functions
-def add(a, b):
-    result = a + b
-    print(result)
+# Python program for simple calculator
 
-def sub(a, b):
-    result = a - b
-    print(result)
+# Function to add two numbers
+def add(num1, num2):
+    return num1 + num2
 
-def mul(a, b):
-    result = a * b
-    print(result)
-    
-def div(a, b):
-    result = a / b
-    print(result)
+# Function to subtract two numbers
+def subtract(num1, num2):
+    return num1 - num2
 
-#Main Loop
+# Function to multiply two numbers
+def multiply(num1, num2):
+    return num1 * num2
+
+# Function to divide two numbers
+def divide(num1, num2):
+    return num1 / num2
+
+print("Please select operation -n"
+"1. Add"
+"2. Subtract"
+"3. Multiply"
+"4. Divide")
 while True:
-    print("A:Addition")
-    print("B:Substraction")
-    print("C:Multiplication")
-    print("D:Division")
-    print("E:Exit")
-    choice = input()
-    #If Statements
-    if choice == "a" or choice == "A":
-        first_number = int(input("What is the first number"))
-        second_number = int(input("What is the second number"))
-        add(first_number, second_number)
-    elif choice == "b" or choice == "B":
-        first_number = int(input("What is the first number"))
-        second_number = int(input("What is the second number"))
-        sub(first_number, second_number)
 
-    elif choice == "c" or choice == "C":
-        first_number = int(input("What is the first number"))
-        second_number = int(input("What is the second number"))
-        mul(first_number, second_number)
+    # Take input from the user
+    select = int(input("Select operations from 1, 2, 3, 4 :"))
 
-    elif choice == "d" or choice == "D":
-        first_number = int(input("What is the first number"))
-        second_number = int(input("What is the second number"))
-        div(first_number, second_number)
+    number_1 = int(input("Enter first number: "))
+    number_2 = int(input("Enter second number: "))
 
-    elif choice == "e" or choice == "E":
-        break
-print("Bye!") 
+    if select == 1:
+        print(number_1, "+", number_2, "=",
+        add(number_1, number_2))
+
+    elif select == 2:
+        print(number_1, "-", number_2, "=",
+        subtract(number_1, number_2))
+
+    elif select == 3:
+        print(number_1, "*", number_2, "=",
+        multiply(number_1, number_2))
+
+    elif select == 4:
+        print(number_1, "/", number_2, "=",
+        divide(number_1, number_2))
+    else:
+        print("Invalid input")
