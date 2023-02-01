@@ -18,8 +18,7 @@ def div(a, b):
 #Main Loop
 while True:
     choice = input("""A:Multiplication
-    B:Substraction
-    C:Multiplication
-    D:Division
-    E:Exit""")
-    
+                      B:Substraction
+                      C:Multiplication
+                      D:Division
+                      E:Exit""")
