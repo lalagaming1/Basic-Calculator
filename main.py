@@ -22,27 +22,27 @@ while True:
     print("C:Multiplication")
     print("D:Division")
     print("E:Exit")
-    choice = input().lower()
+    choice = input()
     #If Statements
-    if choice == "a":
+    if choice == "a" or choice == "A":
         first_number = int(input("What is the first number"))
         second_number = int(input("What is the second number"))
         add(first_number, second_number)
-    elif choice == "b":
+    elif choice == "b" or choice == "B":
         first_number = int(input("What is the first number"))
         second_number = int(input("What is the second number"))
         sub(first_number, second_number)
 
-    elif choice == "c":
+    elif choice == "c" or choice == "C":
         first_number = int(input("What is the first number"))
         second_number = int(input("What is the second number"))
         mul(first_number, second_number)
 
-    elif choice == "d":
+    elif choice == "d" or choice == "D":
         first_number = int(input("What is the first number"))
         second_number = int(input("What is the second number"))
         div(first_number, second_number)
 
-    elif choice == "e":
+    elif choice == "e" or choice == "E":
         break
 print("Bye!") 
