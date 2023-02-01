@@ -1,19 +1,19 @@
 #Defining functions
 def add(a, b):
     result = a + b
-    return(result)
+    print(result)
 
 def sub(a, b):
     result = a - b
-    return(result)
+    print(result)
 
 def mul(a, b):
     result = a * b
-    return(result)
+    print(result)
     
 def div(a, b):
     result = a / b
-    return(result)
+    print(result)
 
 #Main Loop
 while True:
